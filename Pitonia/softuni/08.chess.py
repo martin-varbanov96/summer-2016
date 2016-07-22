@@ -27,6 +27,4 @@ for i in range(8):
 				turtle.forward(side)
 				turtle.left(90)
 			turtle.forward(side)
-
-
 turtle.exitonclick()
