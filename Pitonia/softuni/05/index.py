@@ -74,8 +74,7 @@ def price_by_categories(sales, catalog):
 		else:
 			categories_dict[current_category] += sale["price"]
 	print(categories_dict)
-	result_sorted = sorted(categories_dict.items(), reverse=True, key=operator.itemgetter(1))
-	print(result_sorted)
+	amounts_sorted = list()
 	print("""
 	Сума на продажби по категории (top 5)
 	-----------------------------""")
