@@ -1,0 +1,10 @@
+{% extends "include_core/blog.html" %}
+{% block content %}
+	{% for obj in object_list %}
+		<li>
+			<a href="/blog/{{ obj.id }}"><h1>{{ obj.topic_title }}</h1></a>
+			<span>{{ obj.pub_date|date:"d-m-Y" }}</span>
+			<a href="/blog/{{ obj.id }}"><p>TODO THERE SHOULD BE SOME KIND OF A RESUME HERE FOR ALL THE BLOG POSTS</p></a>
+		</li>
+ 	{% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "include_core/blog.html" %}
+
+{% block content %}
+
+	<li>
+		<a href="singlepost.html"><img src="images/astronaut.jpg" alt=""></a>
+		<h1>{{ post.topic_title }}</h1>
+		<span>{{ post.pub_date|date:"d-m-Y" }}</span>
+		<p>{{ post.topic_text|safe|linebreaks }}</p>
+		<a href="singlepost.html" class="more">Read More</a>
+	</li>
+{% endblock %}
