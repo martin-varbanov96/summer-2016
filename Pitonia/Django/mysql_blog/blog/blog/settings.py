@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog_app',
+    'contacts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,7 +82,7 @@ DATABASES = {
         'USER': 'baston',
         'PASSWORD': 'root123',
         'HOST': 'localhost',
-        'PORT': '3306'
+        'PORT': ''
     }
 }
 
