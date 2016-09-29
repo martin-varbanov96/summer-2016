@@ -1,4 +1,14 @@
 {% extends "include_core/blog.html" %}
+
+{% block seo %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="blog-content-programming-math-django-python-martin-varbanov">
+	<meta name="keywords" content="Blog, Martin, Varbanov, Django, Python, programming, math">
+	<meta name="author" content="Martin Varbanov">
+	<title>Martin Varbanov</title>
+{% endblock %}
+
 {% block content %}
 	{% for obj in object_list %}
 		<li>

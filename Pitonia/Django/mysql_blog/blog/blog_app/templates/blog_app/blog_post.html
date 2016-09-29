@@ -1,11 +1,18 @@
 {% extends "include_core/blog.html" %}
 
-{% block content %}
+{% block seo %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{ post.topic_resume }}">
+	<meta name="keywords" content="Blog, Martin, Varbanov, Django, Python, programming, math">
+	<meta name="author" content="Martin Varbanov">
+	<title>Martin Varbanov</title>
+{% endblock %}
 
+{% block content %}
 	<li>
 		<h1>{{ post.topic_title }}</h1>
 		<span>{{ post.pub_date|date:"d-m-Y" }}</span>
 		<p>{{ post.topic_text|safe|linebreaks }}</p>
-		<a href="singlepost.html" class="more">Read More</a>
 	</li>
 {% endblock %}
